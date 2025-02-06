@@ -10,3 +10,6 @@
 6. `django-admin startproject games src`  
 7. publish your website: `py src/manage.py runserver` 
 8. open website from chrome: http://127.0.0.1:8000/
+
+API documentation:
+https://giscience.github.io/openrouteservice/api-reference/endpoints/directions/
