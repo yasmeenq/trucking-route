@@ -1,4 +1,7 @@
 from pathlib import Path
+import os 
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -15,10 +18,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# I Added this 
-OPENROUTESERVICE_API_KEY = '5b3ce3597851110001cf6248e939ea4a3aa04384b8cc376b5158eeb1'
-
-
 
 # Application definition
 
@@ -30,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    #added: 
     "rest_framework", 
     "api"
 ]
@@ -116,3 +116,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# ADDED : 
+GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")

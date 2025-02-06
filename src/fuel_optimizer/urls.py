@@ -1,6 +1,6 @@
 from django.urls import path
-from api.views import get_route_and_fuel_stops
+from api.views import RouteAPI
 
 urlpatterns = [
-    path('route/', get_route_and_fuel_stops, name='route'),
+    path('route/', RouteAPI.as_view(), name='route_api'),
 ]
