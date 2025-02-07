@@ -41,7 +41,7 @@ Add fuel_api to INSTALLED_APPS in settings.py
 
 
 📌 Step 3: Define Models (models.py)
-
+after any change in models u need to makemigrations
 cd src 
 python manage.py makemigrations
 python manage.py migrate
