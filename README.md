@@ -10,7 +10,8 @@ This project provides a fuel optimization solution for long-haul trucking routes
 1. git clone https://github.com/yasmeenq/trucking-route.git
 2. create virtual environment: `py -m venv env` 
 3. activate it: `env/Scripts/Activate`
-4. open website on: http://127.0.0.1:8000/
+4. pip install -r requirements.txt
+5. open website on: http://127.0.0.1:8000/
 
 ## API documentation:
 #https://developers.google.com/maps/documentation/geocoding/start
