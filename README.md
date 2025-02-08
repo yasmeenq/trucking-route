@@ -40,7 +40,7 @@ python manage.py makemigrations
 python manage.py migrate
 
 
-📌 Step 4: Load CSV Data (management/commands/load_fuel_data.py)
+📌 Step 4: Populate CSV Data into models (management/commands/load_fuel_data.py)
 Inside fuel_api/management/commands/, create load_fuel_data.py:
 Run it:
 python manage.py load_fuel_data
@@ -57,12 +57,10 @@ Create fuel_api/utils.py:
 📌 Step 7: Build API (views.py)
 
 
-📌 Step 8: Configure URLs (urls.py)
-
-
 📌 Step 9: Add API Key to settings.py
 import os
 GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
+
 
 📌 Step 10: Run the Server
 python manage.py runserver
